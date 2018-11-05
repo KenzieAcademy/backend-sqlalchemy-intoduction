@@ -76,7 +76,7 @@ class User(Base):
     id = Column(Integer, primary_key=True)
     username = Column(String)
     
-users = User.all()
+users = User.query.all()
 ```
 
 

@@ -2,6 +2,7 @@ import click
 
 from rdbms.models.database import Base
 from rdbms.models.database import engine
+from rdbms.models import *
 
 
 @click.group()
