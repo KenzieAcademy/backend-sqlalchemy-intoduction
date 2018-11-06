@@ -10,7 +10,7 @@ table to populate form drop-downs. Applications may rely on all kinds of data
 and the data has to come from somewhere. If it isn't collected directly, it is
 likely seeded as tables of semi-static data are introduced. These can include
 countries, color names, planet names, ingredients available at a single
-pizzeria, etc....The second scenario involves verify the expected
+pizzeria, etc....The second scenario involves verifying the expected
 behavior of a database given appropriate inputs or determining behavior given
 unexpected data.
 
