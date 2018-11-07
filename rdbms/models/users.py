@@ -1,5 +1,8 @@
-"""Stub file for respective models.
+from sqlalchemy import Column, Integer, String, ForeignKey
+from .database import Base
 
-Delete the contents of this file and complete it with your solution.
-"""
-from .users_solution import User
+class Users(Base):
+    __tablename__ = 'user'
+
+    id = Column(Integer, primary_key=True)
+    username = Column(String)
