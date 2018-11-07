@@ -162,3 +162,6 @@ CREATE TABLE tags (
 ```sql
 
 ```
+# General Information
+
+This program sets up a SQL database using SQLAlchemy. In this iteration, it creates a SQLite db file with all tables defined by the ORM.
