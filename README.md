@@ -1,3 +1,12 @@
+## Overview
+-Engine is created with default database url unless a database url is passed to it.
+-Models are split up into comments, posts, tags and users py files
+-Models have been converted from SQL to sqlalchemy
+-Database url is stored within the .env file.
+-Program defines a sql structure based on the models and their attributes.
+-Once python manage.py init is run on command line a test.db file is created with 
+model files defined in their respective .py files.
+
 ## Objectives
 - Define and create a simple relational database.
 - Apply concepts of relational data modeling using a database abstraction layer
