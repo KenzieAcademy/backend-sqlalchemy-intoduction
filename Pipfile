@@ -7,8 +7,11 @@ name = "pypi"
 sqlalchemy = "*"
 click = "*"
 python-dotenv = "*"
+mimesis = "*"
+ipdb = "*"
 
 [dev-packages]
+mimesis = "*"
 
 [requires]
 python_version = "3.7"

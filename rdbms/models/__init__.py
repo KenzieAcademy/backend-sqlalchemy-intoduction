@@ -1,8 +1,14 @@
 from dotenv import load_dotenv
 
-from .posts import Post
-from .comments import Comment
+from .addresses import Address
+from .accounts import Account
+from .education import Education
+from .employments import Employment
+from .languages import Language
+from .profiles import Profile
+from .telephones import Telephone
+from .vitals import Vitals
 from .users import User
-from .tags import Tag
+
 
 load_dotenv()
