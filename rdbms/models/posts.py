@@ -1,11 +1,10 @@
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey
+from .database import Base
 
-Base = declarative_base()
-
-class Post(Base):
+class Posts(Base):
     __tablename__ = 'post'
 
     id = Column(Integer, primary_key=True)
-    post = Column(String)
-    time_created = Column(Integer)
+    user_id = Column(String, ForeignKey('user.id'))
+    title = Column(String)
+    body = Column(String)

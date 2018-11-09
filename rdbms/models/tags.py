@@ -1,10 +1,9 @@
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey
+from .database import Base
 
-Base = declarative_base()
-
-class Tag(Base):
+class Tags(Base):
     __tablename__ = 'tag'
 
     id = Column(Integer, primary_key=True)
-    tag = Column(String)
+    user_id = Column(String, ForeignKey('user.id'))
+    body = Column(String)

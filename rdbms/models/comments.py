@@ -1,11 +1,9 @@
-from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey
+from .database import Base
 
-Base = declarative_base()
-
-class Message(Base):
-    __tablename__ = 'message'
+class Comments(Base):
+    __tablename__ = 'comment'
 
     id = Column(Integer, primary_key=True)
-    message = Column(String)
-    time_created = Column(Integer)
+    user_id = Column(String, ForeignKey('user.id'))
+    body = Column(String)

@@ -130,10 +130,10 @@ CREATE TABLE users (
 ```sql
 CREATE TABLE posts (
 	id INTEGER NOT NULL, 
-	user_id INTEGER, 
-	title VARCHAR(255), 
-	body TEXT, 
-	PRIMARY KEY (id), 
+	user_id INTEGER,
+	title VARCHAR(255),
+	body TEXT,
+	PRIMARY KEY (id),
  	FOREIGN KEY(user_id) REFERENCES users (id)
 )
 ```
