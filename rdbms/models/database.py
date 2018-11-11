@@ -7,8 +7,10 @@ import os
 
 DATABASE_URL = os.getenv('DATABASE_URL')
 
-Session = sessionmaker()
 engine = create_engine(DATABASE_URL, echo=False)
 
+Session = sessionmaker()
 Session.configure(bind=engine)
+session = Session()
+
 Base = declarative_base()
