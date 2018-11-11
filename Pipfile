@@ -10,6 +10,7 @@ click = "*"
 [dev-packages]
 "flake8" = "*"
 "autopep8" = "*"
+mimesis = "*"
 
 [requires]
 python_version = "3.6"
