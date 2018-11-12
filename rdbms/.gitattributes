@@ -11,5 +11,5 @@
 # The second pattern is essential for ensuring that .gitattributes itself is not encrypted.
 .gitattributes !filter !diff
 __init__.py !filter !diff
-seeds.py filter=git-crypt diff=git-crypt
-test_seeds.py filter=git-crypt diff=git-crypt
+seeds_solution.py filter=git-crypt diff=git-crypt
+test_seeds_solution.py filter=git-crypt diff=git-crypt
