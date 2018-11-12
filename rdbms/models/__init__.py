@@ -2,3 +2,11 @@ from .posts import *
 from .users import *
 from .comments import *
 from .tags import *
+from .accounts import *
+from .addresses import *
+from .education import *
+from .employments import *
+from .languages import *
+from .numbers import *
+from .profiles import *
+from .vitals import *

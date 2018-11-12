@@ -7,6 +7,8 @@ name = "pypi"
 sqlalchemy = "*"
 click = "*"
 flask-sqlalchemy = "*"
+mimesis = "*"
+ipdb = "*"
 
 [dev-packages]
 

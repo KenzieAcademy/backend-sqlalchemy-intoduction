@@ -2,14 +2,6 @@ from sqlalchemy import Column, Integer, String, ForeignKey
 
 from rdbms.models.database import Base
 
-# CREATE TABLE tags (
-# 	id INTEGER NOT NULL,
-# 	user_id INTEGER,
-# 	body VARCHAR(50),
-# 	PRIMARY KEY (id),
-# 	FOREIGN KEY(user_id) REFERENCES users (id)
-# )
-
 
 class Tag(Base):
 
