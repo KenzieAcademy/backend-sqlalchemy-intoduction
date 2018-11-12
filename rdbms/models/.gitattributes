@@ -13,6 +13,7 @@
 __init__.py !filter !diff
 accounts.py !filter !diff
 addresses.py !filter !diff
+comments.py !filter !diff
 database.py !filter !diff
 education.py !filter !diff
 employment.py !filter !diff
@@ -25,7 +26,7 @@ users.py !filter !diff
 vitals.py !filter !diff
 accounts_solution.py filter=git-crypt diff=git-crypt
 addresses_solution.py filter=git-crypt diff=git-crypt
-commments_solution.py filter=git-crypt diff=git-crypt
+comments_solution.py filter=git-crypt diff=git-crypt
 database_solution.py filter=git-crypt diff=git-crypt
 education_solution.py filter=git-crypt diff=git-crypt
 employment_solution.py filter=git-crypt diff=git-crypt
