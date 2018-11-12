@@ -9,18 +9,30 @@
 # Also note that the pattern dir/* does not match files under sub-directories of dir/.
 
 # The second pattern is essential for ensuring that .gitattributes itself is not encrypted.
-commments_solution.py filter=git-crypt diff=git-crypt
-database_solution.py filter=git-crypt diff=git-crypt
-posts_solution.py filter=git-crypt diff=git-crypt
-tags_solution.py filter=git-crypt diff=git-crypt
-users_solution.py filter=git-crypt diff=git-crypt
-accounts_solution.py filter=git-crypt diff=git-crypt
-addresses_solution.py filter=git-crypt diff=git-crypt
-education_solution.py filter=git-crypt diff=git-crypt
-employments_solution.py filter=git-crypt diff=git-crypt
-languages_solution.py filter=git-crypt diff=git-crypt
-phone_numbers_solution.py filter=git-crypt diff=git-crypt
-profiles_solution.py filter=git-crypt diff=git-crypt
-vitals_solution.py filter=git-crypt diff=git-crypt
 .gitattributes !filter !diff
 __init__.py !filter !diff
+accounts.py !filter !diff
+addresses.py !filter !diff
+database.py !filter !diff
+education.py !filter !diff
+employment.py !filter !diff
+languages !filter !diff
+phone_numbers.py !filter !diff
+posts.py !filter !diff
+profiles.py !filter !diff
+tags.py !filter !diff
+users.py !filter !diff
+vitals.py !filter !diff
+accounts_solution.py filter=git-crypt diff=git-crypt
+addresses_solution.py filter=git-crypt diff=git-crypt
+commments_solution.py filter=git-crypt diff=git-crypt
+database_solution.py filter=git-crypt diff=git-crypt
+education_solution.py filter=git-crypt diff=git-crypt
+employment_solution.py filter=git-crypt diff=git-crypt
+languages_solution.py filter=git-crypt diff=git-crypt
+phone_numbers_solution.py filter=git-crypt diff=git-crypt
+posts_solution.py filter=git-crypt diff=git-crypt
+profiles_solution.py filter=git-crypt diff=git-crypt
+tags_solution.py filter=git-crypt diff=git-crypt
+users_solution.py filter=git-crypt diff=git-crypt
+vitals_solution.py filter=git-crypt diff=git-crypt
