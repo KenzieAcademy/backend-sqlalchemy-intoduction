@@ -12,14 +12,14 @@ class Accounts(Base):
 
     @staticmethod
     def _bootstrap(count=10, locale='en'):
-        from mimesis import Text
-        text = Text(locale)
+        from mimesis import Internet
+        internet = Internet(locale)
         all_users = session.query(Users).all()
 
         for user in all_users:
             account = Accounts(
                 user_id=user.id,
-                social_media_url=text.text(quantity=1)
+                social_media_url=internet.home_page()
             )
             session.add(account)
             try:
