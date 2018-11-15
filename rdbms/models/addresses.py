@@ -29,7 +29,7 @@ class Addresses(Base):
         for user in all_users:
             address = Addresses(
                 user_id = user.id,
-                street_address = addresses.street_name(),
+                street_address = addresses.address(),
                 street_address_two = addresses.street_number(),
                 city = addresses.city(),
                 state = addresses.state(),

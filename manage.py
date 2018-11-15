@@ -30,6 +30,7 @@ def init():
     Languages._bootstrap()
     Profiles._bootstrap()
     Telephones._bootstrap()
+    Vitals._bootstrap()
 
 
 @cli.command()

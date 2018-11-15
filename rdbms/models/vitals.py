@@ -13,15 +13,15 @@ class Vitals(Base):
 
     @staticmethod
     def _bootstrap(count=10, locale='en'):
-        from mimesis import Text
-        text = Text(locale)
+        from mimesis import Person
+        person = Person(locale)
         all_users = session.query(Users).all()
 
         for user in all_users:
             vitals = Vitals(
                 user_id=user.id,
-                height=text.text(quantity=1),
-                weight=text.vitals(quantity=1)
+                height=person.height(),
+                weight=person.weight()
             )
             session.add(vitals)
             try:
