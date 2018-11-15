@@ -1,5 +1,28 @@
-"""Stub file for respective models.
+from sqlalchemy import Column, Integer, String, ForeignKey
+from .database import Base, session
+from sqlalchemy.exc import IntegrityError
+from .users import Users
 
-Delete the contents of this file and complete it with your solution.
-"""
-from .accounts_solution import Account 
+class Accounts(Base):
+    __tablename__ = 'account'
+
+    id = Column(Integer, primary_key=True)
+    user_id = Column(String, ForeignKey('user.id'))
+    social_media_url = Column(String)
+
+    @staticmethod
+    def _bootstrap(count=10, locale='en'):
+        from mimesis import Text
+        text = Text(locale)
+        all_users = session.query(Users).all()
+
+        for user in all_users:
+            account = Accounts(
+                user_id=user.id,
+                social_media_url=text.text(quantity=1)
+            )
+            session.add(account)
+            try:
+                session.commit()
+            except IntegrityError as e:
+                session.rollback()
