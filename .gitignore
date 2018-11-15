@@ -124,3 +124,4 @@ pyvenv.cfg
 .venv
 pip-selfcheck.json
 
+main.db
