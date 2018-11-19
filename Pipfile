@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 sqlalchemy = "*"
 click = "*"
+mimesis = "*"
+python-dotenv = "*"
+pycli = "*"
 
 [dev-packages]
 pylint = "*"
