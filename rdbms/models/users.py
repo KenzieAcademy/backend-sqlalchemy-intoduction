@@ -9,7 +9,7 @@ class Users(Base):
     username = Column(String)
     
     @staticmethod
-    def _bootstrap(count=10, locale='en'):
+    def _bootstrap(count=50, locale='en'):
         from mimesis import Person
         person = Person(locale)
 
