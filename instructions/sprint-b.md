@@ -23,23 +23,24 @@ test database to verify it accepts expected inputs.
 
 # Instructions
 1. Install mimesis.
-2. Create tables for each of the following tables below.
+2. Create or extend each of the following tables.
 3. Seed 50 users with random data from mimesis.
 4. Seed 10 records per table for each of the 50 seeded users with random data from mimesis.
-5. Create tests to verify all 500 seeded records were created.
+5. Create tests to verify all 450 seeded records were created.
 
 
-  | Table       | Columns                                                                                                  |
-  |-------------|----------------------------------------------------------------------------------------------------------|
-  | User        | id, username, password, email address                                                                    |
-  | Accounts    | id, user id, social media url                                                                            |
-  | Addresses   | id, user id, street address, street address two, city, state, postal code, country, start date, end date |
-  | Education   | id, user id, school, start date, end date, graduated, gpa                                                |
-  | Employments | id, user id, company, occupation, start date, end date                                                   |
-  | Languages   | id, user id, language                                                                                    |
-  | Profiles    | id, user id, nationality                                                                                 |
-  | Telephones  | id, user id, telephone number                                                                            |
-  | Vitals      | id, user id, height, weight                                                                              |
+  | Table       | Columns                                                                                                   |
+  |-------------|-----------------------------------------------------------------------------------------------------------|
+  | users        | id, username, password, email address                                                                     |
+  | accounts    | id, user\_id, social media url                                                                            |
+  | addresses   | id, user\_id, street address, street address two, city, state, postal code, country, start date, end date |
+  | education   | id, user\_id, school, start date, end date, graduated, gpa                                                |
+  | employment  | id, user\_id, company, occupation, start date, end date                                                   |
+  | languages   | id, user\_id, language                                                                                    |
+  | profiles    | id, user\_id, nationality                                                                                 |
+  | telephones  | id, user\_id, telephone number                                                                            |
+  | vitals      | id, user\_id, height, weight                                                                              |
+
 
 
 The table above is an unconventional style of defining tables used for clarity.
@@ -47,13 +48,12 @@ The example below is the conventional notation for designing relational
 databases and should be used when defining tables.
 
 
-
 ```text
 users (id, username, password, email
 accounts (id, user_id, url
 addresses (id, user_id, street_address, street_address_two, city, state, postal_code, country, start_date, end_date
 education (id, user_id, school, start_date, end_date, graduated, gpa  
-employments (id, user_id, company, occupation, start_date, end_date
+employment (id, user_id, company, occupation, start_date, end_date
 languages (id, user_id, language
 profiles (id, user_id, nationality
 telephones (id, user_id, number
